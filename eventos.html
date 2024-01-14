@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<ht lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos-js</title>
+</head>
+
+    <h1>Eventos-JavaScript</h1>
+    <input onkeypress="digiteiNoInput()" id="main-input" placeholder="Digite Aqui">
+    <button onclick="cliqueiNoBotao()" class="maim-button">Clique aqui</button>
+    <br>
+    <h2>Noções básicas sobre eventos e manipuladores de eventos</h2>
+
+
+    <p class="paragraph-js">Começando nossa jornada no Javascript</p>
+    <p>Eventos são coisas que acontecem quando um usuário interage com uma página da Web, como quando o usuário clica em um link ou botão, insere texto em uma caixa de entrada ou área de texto, faz uma seleção em uma caixa de seleção, pressiona uma tecla no teclado, move o ponteiro do mouse, envia o formulário, etc. Em alguns casos, eventos podem ser acionados pelo próprio navegador, como eventos de carregamento e descarregamento de página.</p>
+
+    <p>Quando ocorre um evento, você pode usar um manipulador de eventos JavaScript (ou ouvinte de eventos) para capturá-lo e executar uma tarefa específica ou um conjunto de tarefas. Por convenção, os nomes dos manipuladores de eventos sempre começam com a palavra “on”, então o manipulador de eventos para o evento click é chamado de onclick, da mesma forma, o manipulador de eventos para o evento load é chamado de onload e o manipulador de eventos para o evento blur é chamado onblure Então, sobre</p>
+
+    <p>Existem várias maneiras de atribuir manipuladores de eventos. A maneira mais fácil é adicioná-los diretamente à tag de abertura do elemento HTML usando o atributo especial do manipulador de eventos. Por exemplo, para atribuir um manipulador de clique a um elemento de botão, podemos usar o atributo onclick.</p>
+
+    
+    
+  
+</body>
+<style>
+    *{
+        font-family: Arial, sans-serif;
+        
+    }
+
+    h1,h2,p {
+        color: #3c98d5;
+
+
+    }
+
+    button{
+        background-color:#4caf50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px;
+        cursor: pointer;
+        
+    }
+
+    input {
+        width: 70%;
+        height: 30px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        color:#3c98d5
+
+    }
+
+</style>
+<script src="./scripts.js"></script>
+</html>

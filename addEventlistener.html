@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>"Javascript"</h1>
+
+    <h3>AddEventlistener oque significa ?</h3>
+    <br>
+    <p>addEventListener é um método utilizado em programação web para atribuir um ouvinte de eventos a um elemento HTML. Esse método permite que você especifique uma função (ou código) que será executada quando um evento específico ocorrer no elemento alvo.
+
+        A sintaxe básica do addEventListener é a seguinte:
+        addEventListener(evento, função)
+        O evento é um parâmetro que indica qual tipo de evento você deseja ouvir. A função é outro
+        parâmetro que recebe uma referência à função que será executada quando ocorrer o evento especificado.
+        
+        addEventListener é um método utilizado em programação web para atribuir um ouvinte de eventos a um elemento HTML. Esse método permite que você especifique uma função (ou código) que será executada quando um evento específico ocorrer no elemento alvo.
+        
+        A sintaxe básica do addEventListener é a seguinte:
+        
+        javascript
+        Copy code
+        elemento.addEventListener(evento, função, opcional);
+        elemento: É o elemento HTML ao qual você deseja adicionar o ouvinte de eventos.
+        evento: É uma string que representa o tipo de evento que você está esperando (por exemplo, "click", "mouseover", "keydown", etc.).
+        função: É a função que será executada quando o evento ocorrer.
+        opcional: Este argumento é opcional e pode ser um valor booleano que especifica se o evento deve ser capturado na fase de propagação ou na fase de bubbling. Se for true, o evento será capturado durante a fase de propagação; se for false ou omitido, o evento será capturado durante a fase de bubbling.
+        Aqui está um exemplo simples que adiciona um ouvinte de eventos de clique a um botão:
+        var meuBotao = document.getElementById('meuBotao');
+        
+        meuBotao.addEventListener('click', function() {
+            alert('O botão foi clicado!');
+        });
+        Neste exemplo, toda vez que o usuário clica no botão "Meu Botão", ele verá uma mensagem pop
+        up dizendo “O botão foi clicado!”.
+        Parâmetros Opcionais
+        O terceiro parâmetro da chamada addEventListener é opcional e pode ser utilizado para indicar se a função deve ser
+        Existem dois parâmentros opcionais na chamada da função addEventListener: useCapture e
+        passive. Eles são utilizados para determinar como o ouvinte de eventos deve ser tratado.
+        useCapture (opcional): Um valor booleano que indica se o ouvinte de eventos deve ser capturado ou
+        bubbling. Se for true, o ouvinte de eventos será capturado, significando que ele será acionado
+        antes dos ouvintes de eventos registrados no mesmo nó pai. Caso contrário, o ouvinte de eventos
+        será acionado após os ouvintes de eventos registrados no mesmo nó pai. O padrão é false.
+        passive (opcional): Um valor booleano que indica se o ouvinte de eventos pode ser síncron
+        ou assíncrono. Se for true, o ouvinte de eventos será síncrono e não bloquear
+        o thread principal do JavaScript. Caso contrário, o ouvinte de eventos é assíncrono e pode
+        bloquiar o thread principal do JavaScript. O padrão é false.
+        
+        
+        
+        
+        
+        var meuBotao = document.getElementById('meuBotao');
+        
+        meuBotao.addEventListener('click', function() {
+            alert('O botão foi clicado!');
+        });
+        // Adicionando mais um ouvinte de click com useCapture=true</p>
+
+     <input id="main-input" placeholder="Digite aqui">
+
+    <select>
+        <option>Html</option>
+        <option>Css</option>
+        <option>React</option>
+        <option>Node</option>
+    </select>
+
+    <button class="main-button">Clique aqui</button>
+</body>
+<style>
+    h1 {
+        color:darkgreen;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+
+    h3,p {
+        text-align:center;
+        color: dimgrey;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        
+
+    input {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        }
+
+        select{
+            width: 50px;
+            color: rgb(19, 93, 50);
+        }
+
+        button{
+            background-color: rgb(0, 139, 32);
+            border: 0cap;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2;
+            cursor: pointer;
+            }
+
+</style>
+
+<script src="./addEventlistener.js"></script>
+</html>
